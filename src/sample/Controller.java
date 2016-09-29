@@ -43,6 +43,7 @@ public class Controller implements Initializable {
             conn = DriverManager.getConnection(DB_URL);
             System.out.println("Select an option:\n");
             System.out.println("1: Create New User");
+            System.out.println("2: Sign-in");
             Scanner inputScanner = new Scanner(System.in);
             int menuChoice = Integer.valueOf(inputScanner.nextLine());
             if (menuChoice == 1) {
